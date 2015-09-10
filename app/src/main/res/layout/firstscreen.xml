@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstScreen"
+
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:measureWithLargestChild="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#890069"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:text="Paizo Inc.  "
+        android:layout_gravity="right"
+        android:id="@+id/labelPaizo" />
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pathfinder Society App   "
+        android:id="@+id/labelSubtitle"
+        android:layout_gravity="right"
+        android:textColor="#880169" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:id="@+id/linearMain">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.19"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPathfinderId"
+            android:text="Ingrese su Pathfinder Id"
+            android:textStyle="italic"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <Button android:id="@+id/buttonSignIn"
+               android:layout_width="133dp"
+               android:layout_height="wrap_content"
+               android:text="Sing In"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:id="@+id/button"
+            android:onClick="save"
+            android:layout_weight="0.28" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:text="Ultimos Pathfinders"
+        android:id="@+id/buttonPathfinderId"
+        android:textStyle="bold"
+        android:clickable="true" />
+
+</LinearLayout>
